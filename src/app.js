@@ -10,7 +10,7 @@ const app = express();
 //Connecting to mongoDB
 // seNewUrlParser: true, == Requerido desde mongo v>=4.0
 // useUnifiedTopology: true, == Requerido desde mongose v>=5.7
-mongoose.connect('mongodb://localhost/mongo-BD', { useNewUrlParser: true, useUnifiedTopology: true }) 
+mongoose.connect('mongodb://localhost/mongo-DB', { useNewUrlParser: true, useUnifiedTopology: true }) 
 .then(db => console.log('DB connected'))
 .catch(err => console.log(err));
 
