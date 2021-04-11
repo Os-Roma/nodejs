@@ -1,0 +1,22 @@
+<div class="container">
+	<h1>New Note</h1>
+
+  {{> errors}}
+
+  <form class="col-4 mx-auto" action="new-note" method="POST">
+    <h1 class="h3 mb-3 fw-normal">Make a new note</h1>
+
+    <div class="form-floating mb-3">
+      <input name="title" type="text" class="form-control" id="title" placeholder="Insert the title" autofocus value="{{title}}">
+      <label for="title">Title</label>
+    </div>
+    <div class="form-floating mb-3">
+      <textarea rows="4" name="description" id="description" class="form-control" placeholder="Insert the description">{{description}}</textarea>
+      <label for="description" >Description</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Save</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+
+</div>
